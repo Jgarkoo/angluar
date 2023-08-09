@@ -1,0 +1,14 @@
+<button (click)="toggleList()">
+    Toggle List
+</button>
+
+<div *ngIf="visibleList">
+    <h1>
+        List of Items
+    </h1>
+    <ul>
+        <li *ngFor="let items of item"> 
+            {{ item }}
+        </li>
+    </ul>
+</div>
