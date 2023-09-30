@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
-  @Input() product: any; // Assuming product is an object containing product details
+  @Input() product: any; 
   @Output() productSelected: EventEmitter<any> = new EventEmitter<any>();
 
   onProductSelected() {
