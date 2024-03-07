@@ -1,24 +1,28 @@
+
 #conteiner{
     margin: auto;
     padding: 40px;
     width: 50%;
     height: 500px;
     box-shadow: 0px 1px 5px 0px;
+    background-color: rgba(39, 38, 38, 0.945);
 }
 
 .tdl{
-    background-color: rgb(231, 174, 69);
+    background-color: #FC766AFF;
     color: white;
     padding: 10px;
     font-size: 25px;
     width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .list{  
     display: flex;
-    width: 100%;
+    width: 99.8%;
     padding: 10px;
-    box-shadow: 0px 0px 4px -1px;
+    border-style: groove;
+    border-width: 1px;
 }
 
 .email{
@@ -87,6 +91,7 @@
     flex-direction: row;
     width: 100%;
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 .tasks {
@@ -94,8 +99,32 @@
     align-items: baseline;
     width: 95%;
     justify-content: space-between;
-    box-shadow: 0px 1px 3px -1px;
+    border-style: groove;
+    border-width: 1px;
     padding: 5px 15px;
 }
 
+#chng-task{
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 14px 15px;
+}
 
+.btn4{
+    font-size: 15px;
+    border-style: solid;
+    cursor: pointer;
+    color: green;
+    border-color: green;
+    background-color: white;
+    border-radius: 5px;
+    padding: 12px 15px;
+}
+
+.btn4:hover{
+    background-color: green;
+    color: white;
+    border-color: green;
+    transition: 0.3s;
+}
