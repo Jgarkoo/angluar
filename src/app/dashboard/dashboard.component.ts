@@ -28,7 +28,7 @@ export class DashboardComponent implements OnInit {
     this.service.getTask().subscribe(res =>{
       this.taskArr = res;
     }, err =>{
-      alert("SABA AR ICI JUNGLEROBA DA SHEGVECI RA")
+      alert("Error")
     })
   }
 
@@ -47,7 +47,7 @@ export class DashboardComponent implements OnInit {
     this.service.editTask(this.taskObj).subscribe(res =>{
       this.ngOnInit();
     }, err =>{
-      alert("JG DIFF")
+      alert("Error")
     })
   }
 
@@ -55,7 +55,7 @@ export class DashboardComponent implements OnInit {
     this.service.deleteTask(atask).subscribe( res =>{
       this.ngOnInit();
     }, err =>{
-      alert("FF 15");
+      alert("Error");
     })
   }
 
